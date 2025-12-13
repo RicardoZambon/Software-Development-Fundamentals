@@ -229,11 +229,25 @@ software-development-fundamentals/
 ├── Dotnet/
 │   ├── solid/
 │   │   ├── single-responsibility/
+│   │   │   ├── BadInvoiceService.cs
+│   │   │   └── GoodInvoiceService.cs
 │   │   ├── open-closed/
+│   │   │   ├── BadPaymentProcessor.cs
+│   │   │   └── GoodPaymentProcessor.cs
 │   │   ├── liskov-substitution/
+│   │   │   ├── BadBirdExample.cs
+│   │   │   └── GoodBirdExample.cs
 │   │   ├── interface-segregation/
+│   │   │   ├── BadUserService.cs
+│   │   │   └── GoodUserService.cs
 │   │   └── dependency-inversion/
+│   │       ├── BadOrderService.cs
+│   │       └── GoodOrderService.cs
 │   ├── dry/
+│   │   ├── BadOverAbstractedDiscount.cs
+│   │   └── GoodExplicitDiscounts.cs
 │   └── kiss-yagni/
+│       ├── BadOverEngineeredSolution.cs
+│       └── GoodSimpleSolution.cs
 │
 └── LICENSE
