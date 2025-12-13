@@ -184,8 +184,4 @@ A component that:
 
 ➡️ **Open/Closed Principle (OCP)**
 
-Planned file:
-
-```
-docs/solid/02-open-closed.md
-```
+📄 [Docs/solid/02-open-closed.md](02-open-closed.md)

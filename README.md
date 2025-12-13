@@ -22,16 +22,16 @@ The goal is to document **why** these principles matter, **how** to apply them i
 ### SOLID
 A set of design principles focused on **maintainability, testability, and safe change**.
 
-- Single Responsibility
-- Open/Closed
-- Liskov Substitution
-- Interface Segregation
-- Dependency Inversion
+- [Single Responsibility](Docs/solid/01-single-responsibility.md)
+- [Open/Closed](Docs/solid/02-open-closed.md)
+- [Liskov Substitution](Docs/solid/03-liskov-substitution.md)
+- [Interface Segregation](Docs/solid/04-interface-segregation.md)
+- [Dependency Inversion](Docs/solid/05-dependency-inversion.md)
 
 > SOLID is about managing change, not academic purity.
 
-📄 Docs: `docs/solid/`  
-💻 Examples: `dotnet/solid/`
+📄 Docs: [Docs/solid/](Docs/solid/)  
+💻 Examples: [Dotnet/solid/](Dotnet/solid/)
 
 ---
 
@@ -44,8 +44,8 @@ Avoid duplicating **knowledge**, not just code.
 
 > Duplication is cheaper than the wrong abstraction.
 
-📄 Docs: `docs/dry-vs-wet.md`  
-💻 Examples: `dotnet/dry/`
+📄 Docs: [Docs/dry-vs-wet.md](Docs/dry-vs-wet.md)  
+💻 Examples: [Dotnet/dry/](Dotnet/dry/)
 
 ---
 
@@ -57,7 +57,7 @@ A conscious decision to allow duplication when:
 
 > WET is a tool, not a failure.
 
-📄 Docs: `docs/dry-vs-wet.md`
+📄 Docs: [Docs/dry-vs-wet.md](Docs/dry-vs-wet.md)
 
 ---
 
@@ -69,7 +69,8 @@ Prefer:
 
 > If it needs a comment to explain it, it’s probably too complex.
 
-📄 Docs: `docs/kiss-yagni.md`
+📄 Docs: [Docs/kiss-yagni.md](Docs/kiss-yagni.md)  
+💻 Examples: [Dotnet/kiss-yagni/](Dotnet/kiss-yagni/)
 
 ---
 
@@ -81,7 +82,8 @@ Avoid building features or abstractions for hypothetical futures.
 
 > Today’s imaginary problem is tomorrow’s technical debt.
 
-📄 Docs: `docs/kiss-yagni.md`
+📄 Docs: [Docs/kiss-yagni.md](Docs/kiss-yagni.md)  
+💻 Examples: [Dotnet/kiss-yagni/](Dotnet/kiss-yagni/)
 
 ---
 
@@ -92,7 +94,7 @@ Examples:
 - UI ≠ Business Logic ≠ Infrastructure
 - Controllers ≠ Services ≠ Repositories
 
-📄 Docs: `docs/architecture/separation-of-concerns.md`
+📄 Docs: [Docs/architecture/separation-of-concerns.md](Docs/architecture/separation-of-concerns.md)
 
 ---
 
@@ -102,28 +104,98 @@ Examples:
 
 > Easier to test, refactor, and reason about.
 
-📄 Docs: `docs/architecture/cohesion-coupling.md`
+📄 Docs: [Docs/architecture/cohesion-coupling.md](Docs/architecture/cohesion-coupling.md)
 
 ---
 
-### Composition Over Inheritance
-Prefer composing behavior through interfaces and services instead of deep inheritance hierarchies.
+### Layered vs Modular Architecture
+Choose the right organizational approach for your system's complexity.
 
-> Inheritance increases coupling. Composition increases flexibility.
+- Layered: organized by technical responsibility
+- Modular: organized by business capability
+- Hybrid: modules with internal layering
 
-📄 Docs: `docs/architecture/composition-vs-inheritance.md`
+> Architecture is about making change safe.
+
+📄 Docs: [Docs/architecture/layered-vs-modular.md](Docs/architecture/layered-vs-modular.md)
 
 ---
 
-### Fail Fast
-Detect errors early and explicitly.
+### Boundaries & Ownership
+Define clear lines of responsibility and explicit ownership.
 
-- Clear exceptions
-- Meaningful error messages
-- Avoid hiding failures
+- Minimize knowledge sharing between modules
+- Establish clear ownership per area
+- Enforce boundaries consistently
 
-📄 Docs: `docs/error-handling.md`  
-💻 Examples: `dotnet/error-handling/`
+> Boundaries are about limiting blast radius.
+
+📄 Docs: [Docs/architecture/boundaries-ownership.md](Docs/architecture/boundaries-ownership.md)
+
+---
+
+### Architecture Decision Records (ADRs)
+Capture significant architectural decisions and their reasoning.
+
+- Preserve context and reasoning
+- Reduce tribal knowledge
+- Improve onboarding and consistency
+
+> If you can't explain why a decision was made, it will be questioned again.
+
+📄 Docs: [Docs/architecture/architecture-decision-records.md](Docs/architecture/architecture-decision-records.md)
+
+---
+
+### Testing Fundamentals
+Tests enable change by providing confidence in software evolution.
+
+- Focus on behavior, not implementation
+- Follow the testing pyramid (unit → integration → E2E)
+- Tests are about enabling change, not catching bugs
+
+> If tests make change harder, they are failing their purpose.
+
+📄 Docs: [Docs/testing/testing-fundamentals.md](Docs/testing/testing-fundamentals.md)
+
+---
+
+### Testing at Boundaries
+Validate behavior without breaking encapsulation.
+
+- Test through public interfaces
+- Respect architectural boundaries
+- Avoid coupling to implementation details
+
+> Tests should respect the same boundaries as the architecture.
+
+📄 Docs: [Docs/testing/testing-at-boundaries.md](Docs/testing/testing-at-boundaries.md)
+
+---
+
+### Test Data Builders
+Create test data clearly and consistently with minimal noise.
+
+- Reduce setup boilerplate
+- Make test intent obvious
+- Centralize object construction
+
+> Readable tests depend on readable data setup.
+
+📄 Docs: [Docs/testing/test-data-builders.md](Docs/testing/test-data-builders.md)
+
+---
+
+### Async & Time-Dependent Testing
+Test asynchronous code reliably without flaky tests.
+
+- Always await async methods
+- Abstract time dependencies
+- Control concurrency explicitly
+
+> Async code multiplies complexity. Tests must tame it.
+
+📄 Docs: [Docs/testing/async-testing.md](Docs/testing/async-testing.md)
 
 ---
 
@@ -133,20 +205,49 @@ Detect errors early and explicitly.
 software-development-fundamentals/
 │
 ├── README.md
-├── docs/
+├── Docs/
 │   ├── solid/
-│   ├── dry-vs-wet.md
-│   ├── kiss-yagni.md
+│   │   ├── 01-single-responsibility.md
+│   │   ├── 02-open-closed.md
+│   │   ├── 03-liskov-substitution.md
+│   │   ├── 04-interface-segregation.md
+│   │   └── 05-dependency-inversion.md
 │   ├── architecture/
-│   └── error-handling.md
+│   │   ├── separation-of-concerns.md
+│   │   ├── cohesion-coupling.md
+│   │   ├── layered-vs-modular.md
+│   │   ├── boundaries-ownership.md
+│   │   └── architecture-decision-records.md
+│   ├── testing/
+│   │   ├── testing-fundamentals.md
+│   │   ├── testing-at-boundaries.md
+│   │   ├── test-data-builders.md
+│   │   └── async-testing.md
+│   ├── dry-vs-wet.md
+│   └── kiss-yagni.md
 │
-├── dotnet/
+├── Dotnet/
 │   ├── solid/
+│   │   ├── single-responsibility/
+│   │   │   ├── BadInvoiceService.cs
+│   │   │   └── GoodInvoiceService.cs
+│   │   ├── open-closed/
+│   │   │   ├── BadPaymentProcessor.cs
+│   │   │   └── GoodPaymentProcessor.cs
+│   │   ├── liskov-substitution/
+│   │   │   ├── BadBirdExample.cs
+│   │   │   └── GoodBirdExample.cs
+│   │   ├── interface-segregation/
+│   │   │   ├── BadUserService.cs
+│   │   │   └── GoodUserService.cs
+│   │   └── dependency-inversion/
+│   │       ├── BadOrderService.cs
+│   │       └── GoodOrderService.cs
 │   ├── dry/
-│   ├── error-handling/
-│
-├── angular/
-│   ├── components/
-│   ├── state-management/
+│   │   ├── BadOverAbstractedDiscount.cs
+│   │   └── GoodExplicitDiscounts.cs
+│   └── kiss-yagni/
+│       ├── BadOverEngineeredSolution.cs
+│       └── GoodSimpleSolution.cs
 │
 └── LICENSE

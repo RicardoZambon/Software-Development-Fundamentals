@@ -172,8 +172,4 @@ A shared interface where some components throw errors or ignore inputs they "don
 
 ➡️ **Interface Segregation Principle (ISP)**
 
-Planned file:
-
-```
-docs/solid/04-interface-segregation.md
-```
+📄 [Docs/solid/04-interface-segregation.md](04-interface-segregation.md)

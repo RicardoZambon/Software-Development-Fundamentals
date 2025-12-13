@@ -201,6 +201,6 @@ Together, SOLID enables systems that are easier to understand, test, and evolve.
 
 ## Next Steps
 
-* Add concrete code examples under `dotnet/solid/`
-* Add Angular equivalents
-* Expand into architecture, testing, and async fundamentals
+* Explore concrete code examples: 💻 [Dotnet/solid/](../../Dotnet/solid/)
+* Review architecture principles: 📄 [Docs/architecture/](../architecture/)
+* Learn testing fundamentals: 📄 [Docs/testing/](../testing/)
