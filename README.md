@@ -22,16 +22,16 @@ The goal is to document **why** these principles matter, **how** to apply them i
 ### SOLID
 A set of design principles focused on **maintainability, testability, and safe change**.
 
-- Single Responsibility
-- Open/Closed
-- Liskov Substitution
-- Interface Segregation
-- Dependency Inversion
+- [Single Responsibility](Docs/solid/01-single-responsibility.md)
+- [Open/Closed](Docs/solid/02-open-closed.md)
+- [Liskov Substitution](Docs/solid/03-liskov-substitution.md)
+- [Interface Segregation](Docs/solid/04-interface-segregation.md)
+- [Dependency Inversion](Docs/solid/05-dependency-inversion.md)
 
 > SOLID is about managing change, not academic purity.
 
-📄 Docs: `Docs/solid/`  
-💻 Examples: `Dotnet/solid/`
+📄 Docs: [Docs/solid/](Docs/solid/)  
+💻 Examples: [Dotnet/solid/](Dotnet/solid/)
 
 ---
 
@@ -44,8 +44,8 @@ Avoid duplicating **knowledge**, not just code.
 
 > Duplication is cheaper than the wrong abstraction.
 
-📄 Docs: `Docs/dry-vs-wet.md`  
-💻 Examples: `Dotnet/dry/`
+📄 Docs: [Docs/dry-vs-wet.md](Docs/dry-vs-wet.md)  
+💻 Examples: [Dotnet/dry/](Dotnet/dry/)
 
 ---
 
@@ -57,7 +57,7 @@ A conscious decision to allow duplication when:
 
 > WET is a tool, not a failure.
 
-📄 Docs: `Docs/dry-vs-wet.md`
+📄 Docs: [Docs/dry-vs-wet.md](Docs/dry-vs-wet.md)
 
 ---
 
@@ -69,7 +69,8 @@ Prefer:
 
 > If it needs a comment to explain it, it’s probably too complex.
 
-📄 Docs: `Docs/kiss-yagni.md`
+📄 Docs: [Docs/kiss-yagni.md](Docs/kiss-yagni.md)  
+💻 Examples: [Dotnet/kiss-yagni/](Dotnet/kiss-yagni/)
 
 ---
 
@@ -81,7 +82,8 @@ Avoid building features or abstractions for hypothetical futures.
 
 > Today’s imaginary problem is tomorrow’s technical debt.
 
-📄 Docs: `Docs/kiss-yagni.md`
+📄 Docs: [Docs/kiss-yagni.md](Docs/kiss-yagni.md)  
+💻 Examples: [Dotnet/kiss-yagni/](Dotnet/kiss-yagni/)
 
 ---
 
@@ -92,7 +94,7 @@ Examples:
 - UI ≠ Business Logic ≠ Infrastructure
 - Controllers ≠ Services ≠ Repositories
 
-📄 Docs: `Docs/architecture/separation-of-concerns.md`
+📄 Docs: [Docs/architecture/separation-of-concerns.md](Docs/architecture/separation-of-concerns.md)
 
 ---
 
@@ -102,7 +104,7 @@ Examples:
 
 > Easier to test, refactor, and reason about.
 
-📄 Docs: `Docs/architecture/cohesion-coupling.md`
+📄 Docs: [Docs/architecture/cohesion-coupling.md](Docs/architecture/cohesion-coupling.md)
 
 ---
 
@@ -115,7 +117,7 @@ Choose the right organizational approach for your system's complexity.
 
 > Architecture is about making change safe.
 
-📄 Docs: `Docs/architecture/layered-vs-modular.md`
+📄 Docs: [Docs/architecture/layered-vs-modular.md](Docs/architecture/layered-vs-modular.md)
 
 ---
 
@@ -128,7 +130,7 @@ Define clear lines of responsibility and explicit ownership.
 
 > Boundaries are about limiting blast radius.
 
-📄 Docs: `Docs/architecture/boundaries-ownership.md`
+📄 Docs: [Docs/architecture/boundaries-ownership.md](Docs/architecture/boundaries-ownership.md)
 
 ---
 
@@ -141,7 +143,7 @@ Capture significant architectural decisions and their reasoning.
 
 > If you can't explain why a decision was made, it will be questioned again.
 
-📄 Docs: `Docs/architecture/architecture-decision-records.md`
+📄 Docs: [Docs/architecture/architecture-decision-records.md](Docs/architecture/architecture-decision-records.md)
 
 ---
 
@@ -154,7 +156,7 @@ Tests enable change by providing confidence in software evolution.
 
 > If tests make change harder, they are failing their purpose.
 
-📄 Docs: `Docs/testing/testing-fundamentals.md`
+📄 Docs: [Docs/testing/testing-fundamentals.md](Docs/testing/testing-fundamentals.md)
 
 ---
 
@@ -167,7 +169,7 @@ Validate behavior without breaking encapsulation.
 
 > Tests should respect the same boundaries as the architecture.
 
-📄 Docs: `Docs/testing/testing-at-boundaries.md`
+📄 Docs: [Docs/testing/testing-at-boundaries.md](Docs/testing/testing-at-boundaries.md)
 
 ---
 
@@ -180,7 +182,7 @@ Create test data clearly and consistently with minimal noise.
 
 > Readable tests depend on readable data setup.
 
-📄 Docs: `Docs/testing/test-data-builders.md`
+📄 Docs: [Docs/testing/test-data-builders.md](Docs/testing/test-data-builders.md)
 
 ---
 
@@ -193,7 +195,7 @@ Test asynchronous code reliably without flaky tests.
 
 > Async code multiplies complexity. Tests must tame it.
 
-📄 Docs: `Docs/testing/async-testing.md`
+📄 Docs: [Docs/testing/async-testing.md](Docs/testing/async-testing.md)
 
 ---
 

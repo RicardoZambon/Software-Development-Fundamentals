@@ -161,8 +161,4 @@ A service that:
 
 ➡️ **Dependency Inversion Principle (DIP)**
 
-Planned file:
-
-```
-Docs/solid/05-dependency-inversion.md
-```
+📄 [Docs/solid/05-dependency-inversion.md](05-dependency-inversion.md)

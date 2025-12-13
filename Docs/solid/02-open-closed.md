@@ -182,8 +182,4 @@ A component with a growing `switch` to handle multiple UI behaviors.
 
 ➡️ **Liskov Substitution Principle (LSP)**
 
-Planned file:
-
-```
-Docs/solid/03-liskov-substitution.md
-```
+📄 [Docs/solid/03-liskov-substitution.md](03-liskov-substitution.md)
