@@ -30,8 +30,8 @@ A set of design principles focused on **maintainability, testability, and safe c
 
 > SOLID is about managing change, not academic purity.
 
-📄 Docs: `docs/solid/`  
-💻 Examples: `dotnet/solid/`
+📄 Docs: `Docs/solid/`  
+💻 Examples: `Dotnet/solid/`
 
 ---
 
@@ -44,8 +44,8 @@ Avoid duplicating **knowledge**, not just code.
 
 > Duplication is cheaper than the wrong abstraction.
 
-📄 Docs: `docs/dry-vs-wet.md`  
-💻 Examples: `dotnet/dry/`
+📄 Docs: `Docs/dry-vs-wet.md`  
+💻 Examples: `Dotnet/dry/`
 
 ---
 
@@ -57,7 +57,7 @@ A conscious decision to allow duplication when:
 
 > WET is a tool, not a failure.
 
-📄 Docs: `docs/dry-vs-wet.md`
+📄 Docs: `Docs/dry-vs-wet.md`
 
 ---
 
@@ -69,7 +69,7 @@ Prefer:
 
 > If it needs a comment to explain it, it’s probably too complex.
 
-📄 Docs: `docs/kiss-yagni.md`
+📄 Docs: `Docs/kiss-yagni.md`
 
 ---
 
@@ -81,7 +81,7 @@ Avoid building features or abstractions for hypothetical futures.
 
 > Today’s imaginary problem is tomorrow’s technical debt.
 
-📄 Docs: `docs/kiss-yagni.md`
+📄 Docs: `Docs/kiss-yagni.md`
 
 ---
 
@@ -92,7 +92,7 @@ Examples:
 - UI ≠ Business Logic ≠ Infrastructure
 - Controllers ≠ Services ≠ Repositories
 
-📄 Docs: `docs/architecture/separation-of-concerns.md`
+📄 Docs: `Docs/architecture/separation-of-concerns.md`
 
 ---
 
@@ -102,7 +102,7 @@ Examples:
 
 > Easier to test, refactor, and reason about.
 
-📄 Docs: `docs/architecture/cohesion-coupling.md`
+📄 Docs: `Docs/architecture/cohesion-coupling.md`
 
 ---
 
@@ -115,7 +115,7 @@ Choose the right organizational approach for your system's complexity.
 
 > Architecture is about making change safe.
 
-📄 Docs: `docs/architecture/layered-vs-modular.md`
+📄 Docs: `Docs/architecture/layered-vs-modular.md`
 
 ---
 
@@ -128,7 +128,7 @@ Define clear lines of responsibility and explicit ownership.
 
 > Boundaries are about limiting blast radius.
 
-📄 Docs: `docs/architecture/boundaries-ownership.md`
+📄 Docs: `Docs/architecture/boundaries-ownership.md`
 
 ---
 
@@ -141,7 +141,7 @@ Capture significant architectural decisions and their reasoning.
 
 > If you can't explain why a decision was made, it will be questioned again.
 
-📄 Docs: `docs/architecture/architecture-decision-records.md`
+📄 Docs: `Docs/architecture/architecture-decision-records.md`
 
 ---
 
@@ -154,7 +154,7 @@ Tests enable change by providing confidence in software evolution.
 
 > If tests make change harder, they are failing their purpose.
 
-📄 Docs: `docs/testing/testing-fundamentals.md`
+📄 Docs: `Docs/testing/testing-fundamentals.md`
 
 ---
 
@@ -167,7 +167,7 @@ Validate behavior without breaking encapsulation.
 
 > Tests should respect the same boundaries as the architecture.
 
-📄 Docs: `docs/testing/testing-at-boundaries.md`
+📄 Docs: `Docs/testing/testing-at-boundaries.md`
 
 ---
 
@@ -180,7 +180,7 @@ Create test data clearly and consistently with minimal noise.
 
 > Readable tests depend on readable data setup.
 
-📄 Docs: `docs/testing/test-data-builders.md`
+📄 Docs: `Docs/testing/test-data-builders.md`
 
 ---
 
@@ -193,7 +193,7 @@ Test asynchronous code reliably without flaky tests.
 
 > Async code multiplies complexity. Tests must tame it.
 
-📄 Docs: `docs/testing/async-testing.md`
+📄 Docs: `Docs/testing/async-testing.md`
 
 ---
 
