@@ -227,6 +227,13 @@ software-development-fundamentals/
 │   └── kiss-yagni.md
 │
 ├── Dotnet/
-│   └── (examples coming soon)
+│   ├── solid/
+│   │   ├── single-responsibility/
+│   │   ├── open-closed/
+│   │   ├── liskov-substitution/
+│   │   ├── interface-segregation/
+│   │   └── dependency-inversion/
+│   ├── dry/
+│   └── kiss-yagni/
 │
 └── LICENSE
