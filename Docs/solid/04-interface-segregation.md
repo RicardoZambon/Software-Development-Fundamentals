@@ -164,5 +164,5 @@ A service that:
 Planned file:
 
 ```
-docs/solid/05-dependency-inversion.md
+Docs/solid/05-dependency-inversion.md
 ```

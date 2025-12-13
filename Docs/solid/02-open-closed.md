@@ -185,5 +185,5 @@ A component with a growing `switch` to handle multiple UI behaviors.
 Planned file:
 
 ```
-docs/solid/03-liskov-substitution.md
+Docs/solid/03-liskov-substitution.md
 ```

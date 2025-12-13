@@ -76,13 +76,13 @@ Recommended conventions:
 * Store under:
 
 ```text
-docs/architecture/adr/
+Docs/architecture/adr/
 ```
 
 Example:
 
 ```text
-docs/architecture/adr/
+Docs/architecture/adr/
 ├── ADR-001-modular-architecture.md
 ├── ADR-002-database-access-strategy.md
 ```

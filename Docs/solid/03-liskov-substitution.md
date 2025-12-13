@@ -175,5 +175,5 @@ A shared interface where some components throw errors or ignore inputs they "don
 Planned file:
 
 ```
-docs/solid/04-interface-segregation.md
+Docs/solid/04-interface-segregation.md
 ```

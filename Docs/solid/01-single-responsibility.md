@@ -187,5 +187,5 @@ A component that:
 Planned file:
 
 ```
-docs/solid/02-open-closed.md
+Docs/solid/02-open-closed.md
 ```
